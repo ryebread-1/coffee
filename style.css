@@ -1,119 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 @font-face {
-  font-family: mono;
-  src: url(mono.ttf); 
+	font-family: mono;
+	src: url(mono.ttf); 
 }
 @font-face {
-  font-family: derk;
-  src: url(derk.otf);
+	font-family: derk;
+	src: url(derk.otf);
 }
   html {
-  font-family: mono;
-  cursor: url("cursor.png"), default;
+	  font-family: mono;
+	  cursor: url("cursor.png"), default;
 }
 *, *::after, *::before {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-body {
-  background: rgb(17, 17, 17);
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
 }
 a {
-  cursor: url("cursor.png"), default;
-  text-decoration:wavy;
-  color:white!important
+	cursor: url("cursor.png"), default;
+	text-decoration:wavy;
 }
 a:hover {
-  transition:.4s!important;
-  color:rgb(190, 190, 190)!important;
-  text-shadow: 0 0 0.40em rgb(190, 190, 190);
-}
-span::before {
-  content:'\A';
-  white-space:pre
+	transition:.4s!important;
+	color:rgb(190, 190, 190)!important;
+	text-shadow: 0 0 0.40em rgb(190, 190, 190);
 }
 #overlay-toggle {
-  position:absolute;
-  display: none;
+	position:absolute;
+	display: none;
 }
 .debold{
-  font-weight:normal
+  	font-weight:normal
 }
 .socials {
-display: flex;
-align-items: center;
-justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration:wavy; font-family: mono;
 }
 .overlay {
-  z-index: 1;
-  background-color: black;
+	z-index: 1;
+	background-color: black;
 }
 .overlay label {
-  display: grid;
-  place-items: center;
-  width: 100vw;
-  height: 100vw;
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
-  cursor: url("cursor.png"), default;
+	display: grid;
+	place-items: center;
+	width: 100vw;
+	height: 100vw;
+	color: rgb(255, 255, 255);
+	font-size: 2rem;
+	cursor: url("cursor.png"), default;
 }
 .no-hover {
-  display: block;
+	display: block;
 }
 .hover {
-  display: none;
+	display: none;
 }
 .fullscreen {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-height: 100vh;
-  min-width: 100vw;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-height: 100vh;
+	min-width: 100vw;
 }
 .text-content {
-  background: rgba(0, 0, 0, 0);
-  display: grid;
-  place-content: 80%;
-  text-align: center;
-  color: rgb(255, 255, 255);
+	background: rgba(0, 0, 0, 0);
+	display: grid;
+	place-content: 80%;
+	text-align: center;
+	color: rgb(255, 255, 255);
 }
 .text-content h1 {
-  font-size: 3rem;
-  font-weight: 800;
-}
-.text-content p {
-  padding-top: 30px;
-  padding-right: 10px;
-  padding-bottom: 31px;
-  padding-left: 10px;
-  font-size: 1.7rem;
-  font-weight: 500;
-  line-height: 0.0;
-  color: rgb(192, 192, 192);
-  display: flex;
+	font-size: 3rem;
+	font-weight: 800;
 }
 .text-content a {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  font-size: 1.3rem;
-  line-height: 0.0;
-  color: #fff;
-  display: flex;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	font-size: 1.3rem;
+	line-height: 0.0;
+	color: #fff;
+	display: flex;
+}
+i.fa {
+	border-radius:42px;
+	position:absolute;
+	right:10px;
+    cursor: url("cursor.png"), default;
+	bottom:10px;
+	font-size:17px;
+	padding:12px 12px;
+	text-decoration:none;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.fa:hover {
+  color: #7a62ba;
 }
 #overlay-toggle:checked ~ .overlay {
-  animation-fill-mode: forwards;
-  animation-name: fade, hide;
-  animation-delay: 0s, 600ms;
-  animation-duration: 600ms, 1ms;
+	animation-fill-mode: forwards;
+	animation-name: fade, hide;
+	animation-delay: 0s, 600ms;
+	animation-duration: 600ms, 1ms;
 }
 #overlay-toggle:checked ~ .overlay label {
-  animation-fill-mode: forwards;
-  animation-name: fade;
-  animation-delay: 0s;
-  animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	animation-name: fade;
+	animation-delay: 0s;
+	animation-duration: 500ms;
 }
 @media(hover: hover) {
   .hover {

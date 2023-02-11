@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>R Y E 1</title>
+		<!-- these are meta tags-->
+        <title>2023</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta name="description" content="coffee.rye1.lol">
 
@@ -24,30 +24,22 @@
 		<meta name="twitter:description" content="coffee.rye1.lol">
 		<meta name="twitter:image" content="https://i.ytimg.com/vi/ceqgwo7U28Y/maxresdefault.jpg">
         <meta name="theme-color" content="#00000"/>
+		<!--meta tag end -->
         <link rel="stylesheet" href="style.css"/>
-        <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <main>
-            <script>
-				function audioPlay() {
-                    var audio = document.getElementById("audio");
-                    audio.volume = 0.069;
-                    audio.play()
-                }
-                function videoPlay() {
-                    var video = document.getElementById("video");
-                    video.play()
-                }
-            </script>
+			<script src="index.js"></script>
             <input type="checkbox" autocomplete="off" id="overlay-toggle">
             <div class="overlay fullscreen">
-                <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
-                    <span class="no-hover" style="font-family: mono; font-size: 0.6em;">Click here</span>
-                    <span class="hover" style="font-family: derk; font-size: 0.6em;">
+                <label for="overlay-toggle" onclick="playPause()">
+                    <span class="no-hover" style="font-family: mono; font-size: 25px;">Click here</span>
+                    <span class="hover" style="font-family: derk; font-size: 25px;">
+						<span class="overlay-label" style="background:url('sparkle.gif')">
                         <a>click here</a>
                     </span>
-                </label>
             </div>
             <audio loop="" preload="auto" id="audio">
                 <source src="audio.mp3" type="audio/mp3">
@@ -56,16 +48,16 @@
                 <source src="video.mp4" type="video/mp4">
             </video>
             <section class="fullscreen text-content">
+			<i onclick="myFunction(this);playPause()" id="fa" class="fa fa-pause"></i>
             </div>
-                <h1 style="font-family: derk; text-shadow: 0 0 0.40em #bababa; "></h1>
+                <h1 style="font-family: derk; text-shadow:0.40% #bababa; "></h1>
                 <div class="socials">
-                    <a href="https://discordapp.com/users/909377123993677884/" style=" text-decoration:wavy; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em; " target="_blank">Discord</a>
+                    <a href="https://discordapp.com/users/909377123993677884/" style="text-decoration:wavy; font-family: mono;">Discord</a>
                     /
-                    <a href="https://github.com/ryebread-1" style="text-decoration:wavy; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em; " target="_blank">Github</a>
+                    <a href="https://github.com/ryebread-1" style="text-decoration:wavy; font-family: mono;">Github</a>
                     /
-                    <a href="https://discord.gg/uZFqDxFT5M" style="text-decoration:wavy; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em; " target="_blank">SoT hax</a>
-            </div>
-        </main>
-    
-</body>
+					<a href="/enydvlgr/2023/projects" style="text-decoration: none;">Projects</a>
+				</div>
+	    </main>
+	</body>
 </html>
